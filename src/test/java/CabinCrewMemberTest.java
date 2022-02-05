@@ -12,12 +12,12 @@ public class CabinCrewMemberTest {
 
     @Before
     public void before(){
-        cabinCrewMember = new CabinCrewMember("Sandy", Rank.FLIGHT_ATTENDANT);
+        cabinCrewMember = new CabinCrewMember("Sandy Higgins", Rank.FLIGHT_ATTENDANT);
     }
 
     @Test
     public void hasName(){
-        assertEquals("Sandy", cabinCrewMember.getName());
+        assertEquals("Sandy Higgins", cabinCrewMember.getName());
     }
 
     @Test
