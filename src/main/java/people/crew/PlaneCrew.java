@@ -13,11 +13,11 @@ public abstract class PlaneCrew {
     }
 
     public String getName(){
-        return this.name;
+        return name;
     }
 
     public Rank getRank(){
-        return this.rank;
+        return rank;
     }
 
 }

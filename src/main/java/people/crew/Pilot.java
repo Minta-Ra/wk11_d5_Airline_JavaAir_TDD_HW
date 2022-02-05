@@ -2,7 +2,7 @@ package people.crew;
 
 public class Pilot extends PlaneCrew {
 
-    String licenceNumber;
+    private String licenceNumber;
 
     // Constructor
     public Pilot(String name, Rank rank, String licenceNumber){
@@ -11,7 +11,7 @@ public class Pilot extends PlaneCrew {
     }
 
     public String getLicenceNumber(){
-        return this.licenceNumber;
+        return licenceNumber;
     }
 
     public String flyThePlane(){
