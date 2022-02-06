@@ -1,6 +1,4 @@
 package flight;
-import people.crew.Rank;
-
 
 public class Plane{
 

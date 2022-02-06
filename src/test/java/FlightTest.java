@@ -85,4 +85,32 @@ public class FlightTest {
         assertEquals("18:45", flight.getDepartureTime());
     }
 
+    @Test
+    public void hasAvailableSeats(){
+        flight.addPassenger(passenger1);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        assertEquals(2, flight.getNumOfAvailableSeats());
+    }
+
+    @Test
+    public void hasNoSeatsAvailable(){
+        flight.addPassenger(passenger1);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        flight.addPassenger(passenger4);
+        flight.addPassenger(passenger4);
+        flight.addPassenger(passenger4);
+        assertEquals(0, flight.getNumOfAvailableSeats());
+    }
+
+    @Test
+    public void canBookPassenger(){
+        flight.addPassenger(passenger1);
+        flight.addPassenger(passenger2);
+        flight.bookNewPassenger(passenger3);
+        assertEquals(passenger3, flight.getPassengers().get(2));
+        assertEquals(2, flight.getNumOfAvailableSeats());
+    }
+
 }

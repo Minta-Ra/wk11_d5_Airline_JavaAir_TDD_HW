@@ -1,7 +1,6 @@
 package flight;
 import people.crew.CabinCrewMember;
 import people.crew.Pilot;
-import people.crew.Rank;
 import people.passenger.Passenger;
 import java.util.ArrayList;
 
@@ -71,6 +70,19 @@ public class Flight {
 
     public String getDepartureTime(){
         return departureTime;
+    }
+
+    public int getNumOfAvailableSeats(){
+        if (getPassengers().size() < plane.getPlaneType().getCapacity()) {
+            return plane.getPlaneType().getCapacity() - getPassengers().size();
+        }
+        return 0;
+    }
+
+    public void bookNewPassenger(Passenger passenger){
+        if (getPassengers().size() < getNumOfAvailableSeats()){
+            addPassenger(passenger);
+        }
     }
 
 

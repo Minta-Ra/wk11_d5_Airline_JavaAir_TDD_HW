@@ -11,10 +11,10 @@ public class Passenger {
     }
 
     public String getName(){
-        return this.name;
+        return name;
     }
 
     public int getNumOfBags(){
-        return this.numOfBags;
+        return numOfBags;
     }
 }
