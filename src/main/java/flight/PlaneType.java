@@ -3,8 +3,8 @@ package flight;
 public enum PlaneType {
 
     // BOEING_737(215, 79.015),
-    BOEING_737(5, 79.015),
-    AIRBUS_A319(156, 68.000);
+    BOEING_737(5, 79015),
+    AIRBUS_A319(156, 68000);
 
     private final int capacity;
     private final double totalWeight;

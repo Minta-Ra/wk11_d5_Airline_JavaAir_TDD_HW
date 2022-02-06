@@ -2,7 +2,6 @@ import org.junit.Before;
 import org.junit.Test;
 import people.crew.CabinCrewMember;
 import people.crew.Rank;
-
 import static org.junit.Assert.assertEquals;
 
 
